@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: grey;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    line-height: 1.8;
+    color: white;
+
+    margin: 8px;
+    border: #000000 1px solid;
+
+    
+}
+
+.contenedor{
+
+    margin: 20px auto;
+    
+
+    display: grid;
+    grid-gap: 20px;
+    padding:  1rem;
+
+    grid-template-columns: repeat(2 ,1fr);
+    grid-template-rows: repeat(6, auto);
+}
+
+.contenedor > div, 
+.contenedor .perfil,
+.contenedor .datos,
+.contenedor .footer{
+
+    background: black;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .perfil{
+    height: auto;
+    background-position: center,bottom;
+    background-size: auto,cover;
+    
+    
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.contenedor .perfil .foto{
+    width: 10rem;
+    height: auto;
+    border-radius: 10%;
+    vertical-align: middle;
+}
+
+
+.contenedor .perfil p{
+    font-size: 1.5rem;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.contenedor .datos{
+    grid-column: 1 / 2;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    grid-row: 2 / 5;
+
+    grid-template-rows: 1fr 2fr;
+}
+
+.contenedor .educacion{
+    grid-column: 2 / 3 ;
+    grid-row: span 2;
+    background: black;
+}
+
+.contenedor .interes-Soft{
+    grid-column: span 2;
+}
+
+.contenedor .referencias{
+    grid-column: span 2;
+}
+.contenedor .footer {
+    grid-column:  span 2;
+}
+
+.sub{
+    background-color: black;
+    border-radius: 10px;
+    display: inline-block;
+    border: #5d5d5d 3px solid;
+
+}
+
+.sub p{
+    padding: 0.2rem;
+    font-weight: 500;
+    margin: 0;
+    color: white;
+}
+
+.barra-progreso{
+    height: 20px;
+    border: 2px solid #222 ;
+    border-radius: 10px;
+    background-color:  white;
+    margin-bottom: 10px;
+}
+
+.barra{
+    height: 100%;
+    background: #0170d1;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.porcentaje{
+    margin-left: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+.interes-Soft{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap:  1rem;
+    
+}
+
+.posizq{
+    float: left;
+  margin-right: 15px;
+}
+
+.footer{
+    text-align: center;
+}
